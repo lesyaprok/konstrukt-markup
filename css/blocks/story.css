@@ -1,0 +1,72 @@
+.story {
+    padding: 58px 0;
+}
+
+.story__title { 
+    margin-bottom: 72px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 2.30625px;
+    color: #48555B;
+    text-transform: uppercase;
+}
+
+.story__title::after {
+    display: block;
+    content: "";
+    width: 50px;
+    border-bottom: 2px solid #00A4E5;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.story__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.story__text {
+    width: 50%;
+    max-width: 405px;
+}
+
+.story__text-subtitle {
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+}
+
+.text-subtitle--blue {
+    color: #00A4E5;
+} 
+
+.story__text-description {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+}
+
+.story__cards_card {
+    transition: transform 0.3s ease-in;
+}
+
+.story__cards_card:hover {
+    transform: translateY(-5px);
+}
+
+.story__cards_card:not(:first-child) {
+    margin-left: 20px;
+}

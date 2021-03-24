@@ -1,0 +1,107 @@
+.header {
+    display: block;
+}
+
+.header__top {
+    /* padding-top: 381px;
+    padding-bottom: 307px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* height: 769px; */
+    background-image: url('./../../img/header/background.jpg');
+    background-position: top center;
+    background-size: cover;
+}
+
+.header__logo {
+    position: absolute;
+    top: 41px;
+}
+
+.header__title {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.header__subtitle {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.header__scroll {
+    position: absolute;
+    bottom: 75px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 3.7px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: color 0.3s ease-in;
+}
+
+.header__scroll:hover {
+    color: gold;
+}
+
+.header__bottom {
+    display: block;
+    padding: 25px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.header__nav-logo {
+    float: left;
+    width: 50%;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.header__navbar-item {
+    list-style-type: none;
+    margin: 0;
+}
+
+.header__navbar-item:first-child {
+    margin-left: 60px;
+}
+
+.header__navbar-item a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.09091px;
+    color: #48555B;
+    transition: color 0.3s ease-in;
+}
+
+.header__navbar-item a:hover {
+    color: #00A4E5;
+}

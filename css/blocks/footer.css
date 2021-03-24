@@ -1,0 +1,116 @@
+.footer {
+    padding: 42px 0 40px;
+    background-color: #141A20;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__company {
+    max-width: 250px;
+}
+
+.footer__title {
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    text-transform: uppercase;
+}
+
+.footer__description {
+    line-height: 19px;
+    letter-spacing: 0.85px;
+}
+
+/* .footer__links {
+} */
+
+.footer__links ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__links ul:not(:last-child) {
+    margin-right: 34px;
+}
+
+.footer__links li {
+    display: block;    
+    list-style-type: none;
+}
+
+.footer__links li a {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 25px;
+    transition: color 0.3s ease;
+}
+
+.footer__links li a:hover {
+    color: #00A4E5
+} 
+
+.footer__contact {
+    max-width: 141px;
+}
+
+.footer__contact_text {
+    max-width: 141px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.footer__social {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    height: 13px;
+    max-width: 90px;
+}
+
+.footer__social a:not(:last-child) {
+    margin-right: 25px;
+}
+
+.social__fb {
+    background-image: url('./../../img/footer/fb.png');
+    height: 100%;
+    width: 13px;
+}
+.social__twitter {
+    background-image: url('./../../img/footer/twitter.png');
+    height: 100%;
+    width: 13px;
+}
+.social__gmail {
+    background-image: url('./../../img/footer/gmail.png');
+    height: 100%;
+    width: 13px;
+}
+
+/* Copyright section */
+
+.copyright {
+    padding: 22px 0 23px;
+    background-color: #171819;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.85px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,43 @@
+.get-in-touch {
+    display: block;
+    padding: 119px 0 230px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    background-image: url('./../../img/main/background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.get-in-touch__title {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    max-width: 350px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #48555B;
+}
+
+.get-in-touch__link {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding: 11px 26px;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    background-color: #00A4E5;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in;
+}
+
+.get-in-touch__link:hover {
+    background-color: #FFF;
+    border: 1px solid #00A4E5; 
+    padding: 10px 25px;
+    color: #00A4E5;
+}
