@@ -24,13 +24,16 @@
         <nav class="header__bottom" id="nav">
             <div class="container">
                 <div class="header__nav-logo"><img src="./img/header/logo-black.png" alt=""></div>
-                <ul class="header__navbar">
+                <ul class="header__navbar" id="navbar">
                     <li class="header__navbar-item"><a href="#home">Home</a></li>
                     <li class="header__navbar-item"><a href="#about">About</a></li>
                     <li class="header__navbar-item"><a href="#services">Services</a></li>
                     <li class="header__navbar-item"><a href="#work">Work</a></li>
                     <li class="header__navbar-item"><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="header__menu-wrapper" onclick="showMenu()">
+                    <div class="menu-hidden"></div>
+                </div>
             </div>
         </nav>
     </header>
@@ -42,7 +45,7 @@
                 <div class="story__main">
                     <div class="story__text">
                         <h4 class="story__text-subtitle">
-                            Founded in 2011 by John Mathew <br>Smith, <span class="text-subtitle--blue">Konstruct</span> has
+                            Founded in 2011 by John Mathew Smith, <span class="text-subtitle--blue">Konstruct</span> has
                             become the number one construction management firm
                         </h4>
                         <p class="story__text-description">
@@ -60,7 +63,7 @@
             </div>
         </section>
 
-        <section class="capabilities">
+        <section class="none capabilities">
             <div class="container">
                 <div class="capabilities__top">
                     <div class="capabilities__title">
@@ -100,14 +103,14 @@
             </div>
         </section>
 
-        <section class="get-in-touch">
+        <section class="none get-in-touch">
             <div class="container">
                 <h3 class="get-in-touch__title">Want to build something amazing?</h3>
                 <a href="#" class="get-in-touch__link">Get in touch</a>
             </div>
         </section>
 
-        <section class="sign-up">
+        <section class="none sign-up">
             <h3 class="sign-up__title">Newsletter Signup</h3>
             <div class="sign-up__form">
                 <input type="email" name="email" placeholder="test@youremail.com">
@@ -118,7 +121,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="none footer">
         <div class="container">
             <div class="footer-container">
                 <div class="footer__company">
@@ -168,11 +171,36 @@
             </div>
         </div>
     </footer>
-    <div class="copyright">
+    <div class="none copyright">
         <p>© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
     </div>
 
 
+    <script>
+        const wrapper = document.querySelector('.header__menu-wrapper');
+        const navbar = document.getElementById('navbar');
+        const navItem = document.querySelectorAll('.header__navbar-item');
+
+        function showMenu(){
+            navbar.style.width = '100%';
+            navbar.style.marginTop = '10px';
+          
+            navItem.forEach(e => {  e.style.marginLeft = 0;
+                                    e.style.padding = '10px';
+                                    e.style.borderBottom = '1px solid grey';
+                                    e.style.textAlign = 'center';
+                                 }
+                            );
+            navItem[navItem.length-1].style.border = "none";      
+            navItem[navItem.length-1].style.paddingBottom = "0";            
+            
+            toggleMenu();
+        }
+
+        function toggleMenu(){
+            navbar.classList.toggle("navbar--show");
+        }
+    </script>
 </body>
 
 </html>

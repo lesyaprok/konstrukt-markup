@@ -25,7 +25,7 @@
     margin: 0;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 3.75em;
     line-height: 70px;
     text-align: center;
     letter-spacing: 6px;
@@ -73,6 +73,10 @@
     width: 50%;
 }
 
+.header__menu-wrapper {
+    display: none;
+}    
+
 .header__navbar {
     display: flex;
     justify-content: space-between;
@@ -105,3 +109,4 @@
 .header__navbar-item a:hover {
     color: #00A4E5;
 }
+

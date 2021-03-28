@@ -1,26 +1,9 @@
+@import './blocks/base.css';
 @import './blocks/header.css';
 @import './blocks/story.css';
 @import './blocks/capabilities.css';
 @import './blocks/get_in_touch.css';
 @import './blocks/signup.css';
 @import './blocks/footer.css';
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-.container {
-    max-width: 941px;
-    margin: 0 auto;
-}
+@import './media.css';
 

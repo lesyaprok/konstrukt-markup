@@ -1,0 +1,131 @@
+@media (max-width: 998px) {
+    .container {
+        max-width: 90%;
+    }
+    .header__nav-logo {
+        width: 30%;
+    }
+    
+    .header__navbar {
+        width: 70%;
+    }
+
+    .story {
+        padding-top: 38px;
+    }
+
+    .story__main {
+        flex-direction: column;
+    }
+
+    .story__text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .story__title {
+        margin-bottom: 42px;
+    }
+    
+    .story__text-subtitle {
+        margin-bottom: 20px;
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .story__cards {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px auto 0;
+        width: 100%;
+    }
+
+    .story__cards_card {
+        max-width: 140px;
+        width: 30%;
+    }
+}    
+
+@media (max-width: 700px) {
+    .header__top {
+        height: 100vh;
+    }
+    .header__title {
+        padding: 0 20px;
+        font-size: 3em;
+        line-height: 50px;
+    }    
+
+    .header__subtitle {
+        margin-top: 15px;
+        padding: 0 15px;
+    }    
+
+}
+
+@media (max-width: 599px) {
+    .header__nav-logo {
+        width: 20%;
+    }
+    
+    .header__navbar {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .header__bottom {
+        /* display: flex;
+        align-items: center; */
+        position: relative;
+    }
+
+    .header__navbar {
+        display: none;
+    }    
+
+    .header__menu-wrapper {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .menu-hidden {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 5px;
+        background-color: #00A4E5;
+    }
+
+    .menu-hidden::before,
+    .menu-hidden::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 5px;
+        background-color: #00A4E5;
+    }
+
+    .menu-hidden::before {
+        top: -10px;
+    }
+    .menu-hidden::after {
+        top: 10px;
+    }    
+
+    .navbar--show {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+   
+}
