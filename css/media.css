@@ -72,6 +72,32 @@
     .get-in-touch__title {
         margin-bottom: 25px;
     }
+
+    .footer__company {
+        margin-right: 5%;
+        /* margin-bottom: 30px; */
+    }
+    .footer__links {
+        margin-right: 5%;
+    }
+    .footer__contact {
+        margin-right: 5%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .sign-up {
+        flex-direction: column;
+        padding: 20px 0 40px;
+        
+    }
+
+    .sign-up__form {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 85%;
+    }    
 }    
 
 @media (max-width: 700px) {
@@ -131,6 +157,21 @@
         padding: 25px;
     }
 
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__company,
+    .footer__links,
+    .footer__contact {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .footer__social {
+        margin-top: 0;
+    }
 }
 
 
@@ -198,5 +239,24 @@
         margin-bottom: 15px;
     }
 
+    .sign-up__title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .sign-up__button_link {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    
+    .sign-up__button {
+        padding: 0 10px;
+     
+    }  
+    
+    .copyright p {
+        font-size: 10px;
+        line-height: 14px;
+    }
    
 }
